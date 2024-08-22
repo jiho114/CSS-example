@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자</title>
+<!--css내부정의-->
+
+<style>
+  /*전체 선택자 : 문서에 사용된 모든 요소를 선택*/
+  *{
+    background-color:azure;
+  }
+ /*태그 선택자 : 태그 이름으로 요소를 선택*/
+  h1{color:red;}
+  /*id선택자 id 앞에 #*/
+  #msh{
+    background-color:#ccc;
+  }
+  /*클래스 선택자: .클래스명*/
+  .web{
+    color:blueviolet;
+  }
+</style>
+<!--css외부정의-->
+<link href="style.css" rel="stylesheet">
+
+  </head>
+
+
+<body>
+  <!--css인라인 정의 html 태그 (직접) 옆에서 style로 적용-->
+  
+  <h1 id="msh" style="color:blanchedalmond">제목태그1-1</h1>
+
+  <h1 id="wsh" class="wed">제목태그1-2</h1>
+
+  <h1>제목태그1-3</h1>
+  
+  <h1 class="web">제목태그1-4</h1>
+
+  <h2>제목태그2</h2>
+  
+  <h3 class="web">제목태그3</h3>
+  
+  <h4>제목태그4</h4>
+  
+</body>
+</html>
