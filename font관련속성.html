@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폰트관련속성</title>
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    
+    <!--내부정의 css-->
+    <style>  @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+            /*영문만 지원하는 폰트는 제일 앞에 적용*/
+
+                body{
+                   font-family:'NanumBarunGothicBold';
+                   font-size:1rem;
+                   text-align:center; /*인라인 요소의 가운데 정렬*/
+                   /*line-height-폰트 위 아래 여백값으로 행간 조절할때 사용*/
+                   line-height:1.6em;
+                 }
+             h1{
+               font-family:"궁서";,serif;
+               color:skyblue;
+               font-size:46px;
+               /*기울기*/
+               font-style:italic;
+               background-color:#ff9999;
+               letter-spacing:10px;
+               /*글자와 글자 사이의 간격 : 자간*/
+             }
+
+             p{
+              color:grey;
+             }
+
+             .author{
+              font-weight:bold; /*두꺼운 글자*/
+             }
+
+             .price{
+              text-decoration:line-through;/*취소선*/
+             }
+
+             .align{
+              text-align:justfy;/*화면에 꽉 차게*/
+              text-index:20px;/*들여쓰기, -값 주면 내어쓰기 가능*/
+             }
+
+             h2{
+              font-weight:normal;/*font-weight 글자 두께 설정 nomal 초기화 용*/
+              text-transform:uppercase; /*대문자로 변경*/
+             font-size:30px;
+             color:#666;
+             word-spacing:20px; /*단어와 단어 사이의 간격을 조절*/
+             }
+
+             address{
+              font-style:normal;
+              font-size:14px;
+              color:#666;
+              font-family: 'EF_jejudoldam';
+      src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+             }
+
+        div {
+        font-family: "Monoton", sans-serif;
+        font-style: normal;
+      }
+
+      p{
+    font-family: 'EF_jejudoldam';
+    </style>
+  </head>
+  <body>
+    <body class="abc">
+      <h1>호밀밭의 파수꾼</h1>
+      <p class="author">제롬 데이비드 샐린저지음</p>
+      <p class="price">가격 : 10,000원</p>
+      <p class="align">
+        물질적 가치만 내세우는 세상의 비인간성에 염증을 느끼며 반발하는 주인공
+        홀든. 순진함과 예리한 통찰력으로 인생의 충격과 유혹에 맞서가출을
+        결심하지만 뜻밖의 현실에 부딪치는데. 사춘기 청소년이 사회와 가정에 대해
+        느끼고 있는 심리를 잘 표현한 작품.
+      </p>
+      <h2>american library association</h2>
+      <p class="align">
+        샐린저를 단번에 세계적인 작가로 만들어준 『호밀밭의 파수꾼』(1951)은
+        거침없는 언어와 사회성 짙은 소재로 출간 즉시 엄청난 논쟁을 일으키며
+        베스트셀러가 됐다. 이 책에서는 주인공 홀든 콜필드가 학교에서 또 한번
+        퇴학을 당해 집에 돌아오기까지 겪는 며칠간의 일들이 독백 형식으로
+        진행된다. 또한 성에 눈떠 가는 소년의 눈으로 본 세상과 인간 조건에 대한
+        예민한 성찰이 잘 나타나 있다. 올해는 [호밀밭의 파수꾼]이 출간된 지
+        50주년이 되는 해로 50년이 지난 지금까지도 이 소설은 전 세계의 젊은이들을
+        사로잡고 있다.
+      </p>
+      <address>&copy; capyright. 샐린저.</address>
+
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus
+        iure provident saepe aperiam commodi temporibus architecto repudiandae
+        modi quis laboriosam ipsa illum maiores, eaque eius consequatur
+        laudantium consectetur culpa alias.
+      </div>
+    </body>
+  </body>
+</html>

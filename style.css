@@ -1,7 +1,50 @@
-div{color:green;}
-.five{color:black;}
-#six{color:pink!important;}
-#seven{color:green;}
-#eight{color:pink;}
-.nine{color:olive;}
-선언의 우선 순위(연습 문제)3#ten{color: lightgreen!important;}
+p{
+  border:1px dashed black; /**/
+  font-size:3em;
+}
+
+span{
+  font-size:small; /*작은 폰트로 표헌*/
+}
+
+.baseline{
+  vertical-align:baseline;
+}
+
+.sub{
+  vertical-align:sub; /*아래로붙음*/
+}
+
+.super{
+  vertical-align:super; /*윗줄정렬*/
+}
+
+.top{
+  vertical-align:top; /*제일 높은 요소 위치로 정렬*/
+}
+
+.text-top{
+  vertical-align:text-top; /*글자를 기준으로
+  제일 높은 위치*/
+}
+
+.middle{
+  vertical-align:middle;/*가운데로 정렬*/
+}
+
+.bottom{
+  vertical-align:bottom; /*하단정렬*/
+}
+
+.text-bottom{
+  vertical-align:text-bottom;/*글자를 기준으로 
+  하단 정렬*/
+}
+
+.per{
+  vertical-align:50%;/*퍼센테이지, em-rem가능*/
+}
+
+.size{
+  vertical-align:2em;
+}
