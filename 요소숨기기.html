@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>요소숨기기</title>
+  <style>
+
+.box{
+  display:none;
+}
+    .overlay {
+	line-height:4;
+	text-align:center;
+  
+}
+
+.box{
+  visibility: visible;
+}
+
+.text{
+  background-color:rgba(255,0,0,0.5)
+  /*텍스트코드 #ffcc00ff(f최대값 레드>그린>블루>알파)*/
+}
+
+.overlay>.text{
+  opacity:0.75;
+}
+  </style>
+</head>
+<body>
+
+
+  
+  <div class="box">이 박스는 보입니다.</div>
+
+  <div class="overlay">
+    <p class="text">이 텍스트는 배경 위에 있습니다.</p>
+  </div>
+</body>
+</html>
