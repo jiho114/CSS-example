@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>블록_인라인연습</title>
+<style>
+    button{
+        background-color:pink;
+        color:white;
+        font-size:30px;
+        border:none;
+        /*이곳에 코드 작성*/
+        width:200px;
+        height:100px;
+/*display가 inline-block라서 widht와 height값을 적용할수 있음*/
+        /*================*/
+    }
+    a{
+      
+        text-decoration: none;
+        background-color:coral;
+        color:white;
+        font-size:30px;
+        /*a요소는 inline태그라서 높이와 너비를 줄 수 없음*/
+        display:inline-block; 
+        width:200px;
+        height:100px;
+        
+        /*================*/
+    }
+
+
+    section > a+ div{
+      display:none;
+    }
+    /*section의 자식요소인 a에 마우스를 올리면 div의 display를 block으로 설정한다. */
+    section > a:hover + div{
+      display: block; 
+    }
+</style>
+</head>
+
+<body>
+    <button>button</button>
+    <a href="#">button</a>
+
+    <section>
+      <a href="#">버튼</a>
+      <div>안녕</div>
+      <div>잘가</div>
+    </section>
+    
+    <style>
+    section{
+      font-size: 5rem;
+    }
+
+    section{
+	font-size: 5rem;
+}
+    </style>
+</body>
+</html>
