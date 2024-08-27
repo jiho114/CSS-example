@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>white-space속성</title>
+
+    <style>
+      * {
+        border: 1px solid black;
+      }
+
+      div {
+        width: 400px;
+        font-size: 2rem; /* <32px> rem의 r은 루트를 뜻함 (최상위 요소) 배수로 적용 = html 태그*/
+        white-space:nowrap; /*줄바꿈 금지 ( 기본:wrap 줄바꿈 허용 )*/
+        overflow:hidden; /*visible 초기값 / auto visible처럼 보임 /hidden 컨텐트 박스에 맞게 내용 잘림*/
+       }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque totam
+      provident unde illum sed perspiciatis blanditiis mollitia exercitationem
+      excepturi ipsa, inventore deleniti nisi eaque nihil quo saepe nobis?
+      Commodi, expedita.
+    </div>
+  </body>
+</html>

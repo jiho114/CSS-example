@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bg포지션</title>
+  <style>
+    div{
+      background-color: #ff29;
+      background-repeat:no-repeat;
+      width:300px;
+      height:80px;
+      margin-bottom:12px;
+    }
+
+    .one{
+      background-image: url(backgroundimage/spot.png);
+      background-position: 10px bottom;
+      /*축약형으로 사용 가능*/
+      /*background:처음에만 이미지 url 넣어주고 url() 그 뒤는 상관 x ;*/
+    }
+
+    .two{
+      background-image:url(backgroundimage/spot.png);
+      background-position:3em 50%;
+
+    }
+
+    .three{
+      /*배경 이미지와 위치속성을 쉼표로 구분해서 설정한다*/
+      background-image:url(backgroundimage/spot.png),url(backgroundimage/logo.png);
+      background-position:0 0, center;
+    }
+  </style>
+</head>
+<body>
+  <div class="one">one</div>
+  <div class="two">two</div>
+  <div class="three">three</div>
+</body>
+</html>

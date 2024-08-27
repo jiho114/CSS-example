@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>overflow연습</title>
+    <style>
+      .content {
+        width: 300px;
+        height: 200px;
+        border: 1px solid #000;
+        overflow: scroll;
+      }
+
+      .scroll-box {
+        width: 300px;
+        height: 100px;
+        border: 1px solid #000;
+        overflow: auto;
+        /* 콘텐츠가 넘칠 경우 스크롤바 표시 */
+      }
+
+
+      .box {
+        width: 200px;
+        height: 100px;
+        border: 1px solid #000;
+        overflow-y:hidden;
+        overflow-x:scroll;
+        /* 넘치는 부분을 숨김 */
+      }
+      .child {
+        width: 300px;
+        height: 150px;
+        background-color: lightblue;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit doloremque
+      quasi dignissimos quo, ipsam ullam alias ut cupiditate dolorem, minus
+      blanditiis itaque, et dolor similique. Laboriosam, minus! Ipsam, qui
+      deleniti! Obcaecati dicta accusantium a id suscipit, quos dolorem
+      architecto hic, ipsam nemo accusamus ipsa ut doloremque vitae. Quas, in
+      non ipsam at exercitationem provident nemo voluptatem nesciunt aliquam
+      necessitatibus dolorum? Explicabo molestias facilis dignissimos doloribus,
+      consequatur pariatur excepturi enim placeat hic voluptate mollitia amet
+      cupiditate blanditiis vitae assumenda officia voluptatem sed iusto? Nemo,
+      praesentium similique sint ex recusandae vel harum?
+    </div>
+
+    <div class="scroll-box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quisquam
+      omnis modi nemo velit blanditiis illum asperiores expedita laudantium
+      iusto porro sunt itaque cupiditate fugit non? Explicabo hic et fugit. Nisi
+      ipsam dicta quis illum laborum labore, explicabo dolores fugit tempora
+      nulla doloribus numquam distinctio, ratione aut. Expedita maxime,
+      voluptatem eius autem deleniti sapiente illo earum temporibus repudiandae
+      eum voluptas? Voluptatibus voluptatum, sed sit, distinctio nemo at sequi
+      molestiae eum architecto facere voluptatem consectetur libero est impedit
+      enim consequuntur dicta quas itaque. Labore saepe fuga obcaecati corrupti
+      voluptatibus veniam quasi.
+    </div>
+
+    <div class="box">
+      <div class="child">Child 1</div>
+      <div class="child">Child 2</div>
+    </div>
+  </body>
+</html>
