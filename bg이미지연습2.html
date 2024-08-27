@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>bg이미지연습2</title>
-  <style>
-    section{
-      width:100%;
-      min-width:800px;
-      height:640px;
-      background-image:url(backgroundimage/background-image.jpg);
-      background-size: cover;
-      text-align:center;
-      overflow: hidden;
-      
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bg이미지연습2</title>
+    <style>
 
-    .box{
-      background-color:rgba(255,255,255,0.4);
-      width:540px;
-      height:240px;
-      border-radius:40px;
-      margin:0 auto;
-      margin-top:80px;
-      
-      
+    *{/*노멀라이징*/
+      margin:0;
+      padding:0;
     }
+      .bg {
+        width: 100%;
+        min-width: 800px;
+        height:640px;
+        background-image: url(backgroundimage/background-image.jpg);
+        background-size: cover;
+        text-align: center;
+        overflow: hidden;
+        background-position:center;
+      }
 
-    h1{
-      font-size:42px;
-      padding-top:30px;
-      
-    }
+      .box {
+        background-color: rgba(255, 255, 255, 0.4);
+        width: 540px;
+        height: 240px;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 100px;
 
-    p{
-      font-size:24px;
-      color:#333
-    }
-  </style>
-</head>
-<body>
-  <section>
-    <div class="box">
-      <h1>전좌석 안전띠 착용, 옵션이 아닌 필수입니다.</h1>
-       <p>5년간 1,300명 안전띠 미착용으로 사망!</p>
-    </div>
-  </section>
-</body>
+      }
+
+      h1 {
+        font-size: 42px;
+        padding-top: 50px;
+        font-family:"휴먼둥근헤드라인";
+        opacity:0.9;
+        font-weight:lighter;
+        line-height:1.2;
+      }
+
+      p {
+        font-size: 24px;
+        color: #333;
+        padding-top:20px;
+        font-family: "맑은 고딕";
+      }
+    </style>
+  </head>
+  <body>
+   
+    <div class="bg">
+      <div class="box">
+        <h1>전좌석 안전띠 착용, <br>
+           옵션이 아닌 필수입니다.</h1>
+        <p>5년간 1,300명 안전띠 미착용으로 사망!</p>
+      </div>
+    
+    </section>
+  </body>
 </html>
