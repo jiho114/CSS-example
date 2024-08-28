@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>네비게이션메뉴만들기</title>
+    <style>
+      /*body요소의 여백 제거*/
+      
+      body {
+        margin: 0;
+      }
+
+      nav{
+        margin: 0 ;
+        padding: 0;
+      }
+
+      ul{
+        width:1000px;
+        margin:20px auto;
+        list-style:none;
+        overflow:hidden;
+        background-color: aliceblue;
+        border-radius: 50px;
+
+      }
+
+      li{
+        width:200px;
+        float:left;
+        text-align:center;
+        line-height:60px;
+      }
+
+     li>a{
+        text-decoration:none;
+        font-size:30px;
+        color:black;
+        
+        
+      
+        
+      }
+
+      li>a:hover{
+        color: red;
+       
+      }
+
+     
+
+      section {
+        height: 800px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#profile">profile</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#skill">skill</a></li>
+      </ul>
+    </nav>
+
+    <section id="home">home</section>
+    <section id="about">about</section>
+    <section id="profile">profile</section>
+    <section id="portfolio">portfolio</section>
+    <section id="skill">skill</section>
+  </body>
+</html>

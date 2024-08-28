@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>bg연습3</title>
-  <style>
-    .box1{
-      background-image:url(bgimage/background1.jpg);
-      width:600px;
-      height:600px;
-      background-position: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg연습3</title>
+    <style>
+         *{
+          margin:0;
+          padding:0;
+         }
 
-    .box2{
-      background-image:url(bgimage/background2.jpg);
-      width: 400px;
-      height:400px;
-      background-position: center;
-    }
-
-    .box3{
-      background-image:url(bgimage/background3.jpg);
-      width:200px;
-      height:200px;
-      background-position:center;
-    }
-  </style>
+        .box1{
+            width:600px;
+            height:600px;
+            border:1px solid red;
+            box-sizing: border-box; /*width 와 height 값 안으로 padding을 넣어줌*/
+            background-image:url(bgimage/background1.jpg);
+            padding:100px;
+        }
+        .box2{
+            width:400px;
+            height:400px;
+            background-image: url(bgimage/background2.jpg);
+            padding:100px;
+            box-sizing: border-box;
+            border:1px solid red;
+            text-align: center;
+            
+        }
+        .box3{
+            width:200px;
+            height:200px;
+            background-image: url(bgimage/background3.jpg);
+            border:1px solid red;
+            box-sizing: border-box;
+            color:white;
+            line-height:100px;
+            font-size:30px;
+            font-weight:bold;
+        }
+    </style>
 </head>
 <body>
-  <div class="box1">
+ <div class="box1">
     <div class="box2">
-      <div class="box3">background
-
-      </div>
+        <div class="box3">
+           background
+        </div>
     </div>
-  </div>
+ </div>
 </body>
 </html>

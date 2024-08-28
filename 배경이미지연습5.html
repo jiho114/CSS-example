@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배경이미지연습5</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      section {
+      }
+      article {
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .bg1 {
+        background-image: url(bgimage/background-attachment_01.jpg);
+        width: 100%;
+        height: 400px;
+        text-align: center;
+      }
+
+      .bg2 {
+        background-image: url(bgimage/background-attachment_01.jpg);
+        width: 100%;
+        height: 520px;
+      }
+
+      .bg3 {
+        background-image: url(bgimage/background-attachment_02.jpg);
+        width: 100%;
+        height: 520px;
+        background-repeat: no-repeat;
+      }
+
+      .ba {
+        width: 100%;
+        height: 400px;
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 90px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: lighter;
+        padding-top: 50px;
+      }
+
+      .ba2 {
+        width: 100%;
+        height: 400px;
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 80px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .ba > p:nth-child(1) {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article class="bg1"></article>
+      <div class="ba">
+        BACKGROUND-ATTACHMENT
+        <p>이 속성은 배경이미지를 어떻게 고정할지를 정하는 속성입니다.</p>
+
+        <p>
+          스크롤 하여 내용을 볼 때 배경 이미지가 내용과 같이 움직일지,
+          <br />
+          또는 배경 이미지는 고정되어 있을지 결정 할 수 있습니다.
+        </p>
+      </div>
+      <article class="bg2"></article>
+      <div class="ba2">
+        <h1>사용 가능 속성</h1>
+
+        <p>
+          <b>scroll</b> : 기본 값입니다. 요소에 고정되어있습니다.
+          <br />
+          <b>local</b> : 요소 안 내용에 고정됩니다. 요소 안을 스크롤을 할 때,
+          이미지가 내부의 내용과 같이 움직입니다.
+          <br />
+          <b>fixed</b> : background-position의 좌표를 뷰포트(웹 페이지 화면)를
+          기준으로 합니다.
+        </p>
+      </div>
+      <article class="bg3"></article>
+    </section>
+  </body>
+</html>

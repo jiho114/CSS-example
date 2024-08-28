@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>네비게이션만들기</title>
+    <style>
+
+      *{
+        outline:1px solid red;
+        
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 50px;
+      }
+
+      .menu-box {
+        text-align: center;
+      }
+
+      /*메뉴*/
+
+      .menu-box > .menu {
+        display: inline-block;
+        padding: 0 auto;
+        background-color: salmon;
+        border-radius: 10px;
+      }
+
+      .menu-box > .menu > .item {
+        display: inline-block;
+      }
+
+      .menu-box > .menu > .item > a {
+        font-size: 18px;
+        padding: 10px;
+        display: inline-block;
+      }
+/*float로 정렬*/
+      .menu-box > .menu > .item > a:hover {
+        color: lightpink;
+      }
+
+      .box2>ul{
+        width:800px;
+        margin:20px auto;        
+        overflow: hidden;
+        background-color:sandybrown;
+        border-radius: 20px;
+      }
+
+      .box2 li{
+        width:200px;
+        float:left;
+        text-align:center;
+        line-height:60px;
+        
+      }
+
+      li>a{
+        display:block
+      }
+
+      .box2 a:hover{
+        background-color:salmon;
+        color:white;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1 class="title">LOGO</h1>
+      <nav class="menu-box">
+        <ul class="menu">
+          <li class="item1 item"><a href="#">item1</a></li>
+          <li class="item2 item"><a href="#">item2</a></li>
+          <li class="item3 item"><a href="#">item3</a></li>
+          <li class="item4 item"><a href="#">item4</a></li>
+        </ul>
+      </nav>
+    </section>
+    <hr />
+    <!--float로 정렬-->
+    <nav class="box2">
+      <ul>
+        <li><a href="#">메뉴아이템</a></li>
+        <li><a href="#">메뉴아이템</a></li>
+        <li><a href="#">메뉴아이템</a></li>
+        <li><a href="#">메뉴아이템</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
