@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>네비게이션메뉴만들기</title>
     <style>
+
+      html{/*부드러운 스크롤 이동*/
+        scroll-behavior: smooth;
+      }
       /*body요소의 여백 제거*/
       
       body {
@@ -17,11 +21,11 @@
       }
 
       ul{
-        width:1000px;
-        margin:20px auto;
+        width:1050px;
+        margin:0 auto;
         list-style:none;
-        overflow:hidden;
-        background-color: aliceblue;
+        overflow:hidden;/*float속성을 적용할 자식 요소의 높이를 인식시키기 위해서 설정*/
+        
         border-radius: 50px;
 
       }
@@ -30,13 +34,18 @@
         width:200px;
         float:left;
         text-align:center;
-        line-height:60px;
+        line-height:50px;
+        background-color: aliceblue;
+        margin-right:10px;
+      
       }
 
      li>a{
         text-decoration:none;
         font-size:30px;
         color:black;
+
+      
         
         
       
@@ -45,15 +54,24 @@
 
       li>a:hover{
         color: red;
-       
+      
       }
 
      
 
       section {
+        width:1000px;
+        height:800px;
         height: 800px;
         color: #fff;
+        margin:0 auto;
       }
+
+      #home{ background-color:pink; }
+#about{ background-color:khaki; }
+#profile{ background-color:orange; }
+#portfolio{ background-color:skyblue; }
+#skill{ background-color:olive; }
     </style>
   </head>
   <body>

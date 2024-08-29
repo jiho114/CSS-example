@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>정렬연습</title>
+    <style>
+      header {
+        width: 840px;
+        height: 150px;
+        margin: 0 auto;
+        outline:1px solid red;
+      
+      }
+
+      #logo {
+        width: 180px;
+        height: 60px;
+     
+        margin: 0 auto;
+        outline:1px solid red;
+        margin-top: 10px;
+      }
+
+      #gnb {
+        width: 840px;
+        height: 60px;     
+        margin-top: 10px;
+        outline:1px solid red;
+      }
+
+      ul {
+        width: 360px;
+        height: 60px;
+        list-style: none;
+        overflow: hidden;
+        margin: 10px auto;
+        box-sizing: border-box;
+        margin-top: 10px;
+       outline:1px solid red;
+      }
+      ul > li {
+        
+        width:60px;
+        height: 30px;
+        float: left;
+        outline:1px solid red;
+        margin: 5px;
+        margin-top: 15px;
+      }
+
+      #banner {
+        width: 840px;
+        height: 240px;
+        margin: 0 auto;
+        outline:1px solid red;
+      }
+
+      #contents {
+        width: 840px;
+        height: 410px;
+        margin: 0 auto;
+        outline:1px solid red;
+      }
+
+      .box {
+        width: 260px;
+        height: 190px;
+        float: left;
+        margin:10px 10px 0; 
+    
+    
+        outline:1px solid red;
+      }
+
+      footer {
+        width: 840px;
+        height: 90px;
+        margin: 0 auto;
+        outline:1px solid red;
+      }
+
+      .left {
+        width: 260px;
+        height: 70px;
+        float: left;
+        margin: 10px;
+        outline:1px solid red;
+      }
+
+      .right {
+        width: 260px;
+        height: 70px;
+        float: right;
+        margin: 10px;
+        outline:1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo"></div>
+      <div id="gnb">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </div>
+    </header>
+    <section id="banner"></section>
+    <section id="contents">
+      <article class="box"></article>
+      <article class="box"></article>
+      <article class="box"></article>
+      <article class="box"></article>
+      <article class="box"></article>
+      <article class="box"></article>
+    </section>
+
+    <footer>
+      <div class="left"></div>
+      <div class="right"></div>
+    </footer>
+  </body>
+</html>
+
+<!--자식 요소의 margin-top이 부모요소에 적용되는 것을 막기 위해 overflow-auto,hidden사용-->

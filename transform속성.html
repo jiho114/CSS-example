@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform속성</title>
+  <style>
+    .box{
+      width:100px;
+      height:100px;
+      background-color:skyblue;
+      margin-bottom: 50px;
+      border:1px solid navy;
+    }
+/*위치속성 translate*/
+    .box{
+      /*x축으로 100px이동*/
+      transform:translateX(100px);
+      /*Y축으로 100px 이동*/
+      transform:translateY(100px);
+      /*X100 Y100 이동*/
+      transform:translate(100px, 100px);
+    }
+
+    /*크기속성*/
+    .box2{
+      /*X축으로 1.5배 확대*/
+      transform:scaleX(1.5);
+      /*Y축으로 1.5배 확대*/
+      transform:scaleY(1.5);
+      /*X축 Y축으로 1.5배 확대*/
+      transform:scale(1.5);
+    }
+
+    /*회전속성*/
+
+    .box3{
+      /*X축으로 회전 45도*/
+      transform:rotateX(45deg);
+      /*y축으로 회전 45도*/
+      transform:rotateY(45deg);
+      /*Z축으로 회전 45도*/
+      transform:rotateZ(45deg);
+    }
+
+    /*기울기*/
+
+    .box4{
+      /*X축으로 20도 기울기*/
+      transform:skewX(20deg);
+      /*Y축으로 20도 기울기*/
+      transform:skewY(20deg);
+      
+    }
+
+    /*여러변형조합*/
+
+    .box5{
+      transform:translateX(50px) rotate(30deg) scale(1.1);
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+  <div class="box box3"></div>
+  <div class="box box4"></div>
+  <div class="box box5"></div>
+</body>
+</html>
