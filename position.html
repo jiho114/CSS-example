@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position속성</title>
+  <style>
+    div.parent/*div태그이면서 클래스가 parent인 요소를 선택*/
+    {
+      width:100%;
+      background-color:darksalmon;
+      position: relative;
+    }
+
+    div.parent>div.child{
+      width:200px;
+      height:200px;
+      background-color: orange;
+      position: static; /*블럭요소가 기본적으로 가지고 있는 포지션값
+      초기화 할때 사용*/
+    }
+  /*선택자가 갈수록 우선순위를 가짐*/
+  div.parent>div.ch1{
+    background-color:salmon;
+    position:relative; /*유령의 집화: 위치 속성을 적용해서 상대적으러 위치를 이동할 수 있다.*/
+    top:100px; /*top bottom left right*/
+    left:100px;
+    outline:1px solid black;
+    z-index:3;/*도형의 위 아래 (z축) 순서를 변경 숫자가 낮을 수록 밑으로, 높을 수록 위로*/
+  }
+  
+  /*부모 요소에 position 값을 주면 부모 요소 안에서 돌아다님*/
+
+  div.parent>div.ch2{
+    background-color:rgb(168, 83, 83);
+    position:absolute; /*유령상태 (부유상태)*/
+    bottom:50px; /*absolute 속성 뷰포트 기준으로 움직임*/
+    right:100px; /*좌표 속성: left: 좌측 기준 top: 상단 기준 right: 오른쪽 기준 bottom: 하단 기준*/
+    z-index:4;
+  }
+
+  div.parent>div.ch3{
+    background-color:pink;
+    position:absolute;
+  }
+  </style>
+</head>
+<body>
+  <h1>position=위치 속성</h1>
+
+  <div class="parent">
+    <div class="child ch1">box1</div>
+    <div class="child ch2">box2</div>
+    <div class="child ch3">box3</div>
+  </div>
+</body>
+</html>

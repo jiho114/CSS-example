@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>다운메뉴</title>
+    <style>
+
+      *{
+        outline:1px solid red;
+      }
+
+      ul, li, a{
+        text-align: center;
+        text-decoration: none;
+        list-style:none;
+        color:black
+      }
+      .sub {
+        display: none;
+      }
+      /*1차 메뉴의 li요소에 마우스를 올리면 그 다음 형제 요소인 .sub를 화면에 표시*/
+      .menu-box > ul > li:hover > a + .sub {
+        display: block;
+      }
+      .menu-box > ul > li:hover> a{
+        background-color:gold;
+      }
+
+      .sub>li>a:hover{
+        background-color:pink;
+      }
+      
+      .menu-box{
+        width:800px;
+        height:200px;
+        margin:0 auto;
+        position: relative;
+      }
+
+      .menu1{
+        position: absolute;
+        top:100px;
+        left:100px;
+      }
+      .menu2{
+        position: absolute;
+        top:100px;
+        left:300px;
+      }
+      .menu3{
+        position: absolute;
+        top:100px;
+        left:500px;
+      }
+      .menu4{
+        position: absolute;
+        left:800px;
+        top:700px;
+      }
+
+
+
+      
+
+
+    </style>
+  </head>
+  <body>
+    <nav class="menu-box">
+      <ul>
+        <li class="menu1">
+          <a href="#" class="box1">1차 메뉴 아이템1 </a>
+          <ul class="sub">
+            <li><a href="#">2차메뉴아이템1</a></li>
+            <li><a href="#">2차메뉴아이템2</a></li>
+            <li><a href="#">2차메뉴아이템3</a></li>
+            <li><a href="#">2차메뉴아이템4</a></li>
+          </ul>
+        </li>
+        <li class="menu2">
+          <a href="#">1차 메뉴 아이템2 </a>
+          <ul class="sub">
+            <li><a href="#">2차메뉴아이템1</a></li>
+            <li><a href="#">2차메뉴아이템2</a></li>
+            <li><a href="#">2차메뉴아이템3</a></li>
+            <li><a href="#">2차메뉴아이템4</a></li>
+          </ul>
+        </li>
+        <li class="menu3">
+          <a href="#">1차 메뉴 아이템3 </a>
+          <ul class="sub">
+            <li><a href="#">2차메뉴아이템1</a></li>
+            <li><a href="#">2차메뉴아이템2</a></li>
+            <li><a href="#">2차메뉴아이템3</a></li>
+            <li><a href="#">2차메뉴아이템4</a></li>
+          </ul>
+        </li>
+        <li class="menu4">
+          <a href="#">1차 메뉴 아이템4 </a>
+          <ul class="sub">
+            <li><a href="#">2차메뉴아이템1</a></li>
+            <li><a href="#">2차메뉴아이템2</a></li>
+            <li><a href="#">2차메뉴아이템3</a></li>
+            <li><a href="#">2차메뉴아이템4</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
