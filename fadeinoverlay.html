@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fadeinOverlay</title>
+  <script src="https://kit.fontawesome.com/350ae1936f.js" crossorigin="anonymous"></script>
+  <style>
+    .container{
+      width:60%;
+      margin:0 auto;
+      position: relative;
+    }
+
+    .container>img{
+      display: block;
+      width:100%;
+    }
+
+    .overlay{
+      position: absolute;
+      /*top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      position 앱솔루트 적용한 요소를 부모요소의 100%크기로 설정할때*/
+      
+      /*포지션 앱솔루트 적용요소를 가운데 정렬하는 방법*/
+
+      left:50%;
+      top:50%;
+      color:white;
+      font-size:2rem;
+      transform:translate(-50%, -50%);
+      /*화면에서 제거*/
+      /*display:none;*/
+      opacity:0;
+      transition:opacity 3s;
+    }
+
+    .container:hover>.overlay{
+       /*display:block;*/ 
+      opacity:1;
+      transition:3s;
+      
+    }
+
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="bg/bengal-cat-8012976_1920.jpg" alt="">
+    <div class="overlay">
+      <div class="txt">hello Cat</div>
+    </div>
+    <i class="fa-brands fa-square-instagram" style="color: #ec74c6;"></i>
+  </div>
+</body>
+</html>

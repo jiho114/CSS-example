@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>콘텐츠정렬</title>
+  <style>
+   
+
+    .container{
+      width:1200px;
+      margin:0 auto;
+      overflow:auto;
+    }
+
+    .box{
+      float: left;
+      margin:20px;
+      margin-top:200px;
+    }
+
+     .box>img{
+      width:250px;
+      height:240px;
+      display: block;
+     }
+
+     .box1{
+      position: relative;
+     }
+
+     .txt{
+      position: absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      padding: 20px;
+      background-color: darkgray;
+      font-size:14px;
+      color: white;
+      line-height:1.5;
+      opacity:0;
+      transition:opacity 3s;
+      box-sizing: border-box;
+      
+     }
+
+     .container:hover>.box>.txt{
+      opacity:1;
+      transition:opacity 3s;
+       }
+
+     .txt>p{
+      margin-bottom:30px;
+     }
+
+
+     
+    
+   
+
+  </style>
+</head>
+<body>
+  <div class="container">
+   <div class="box1 box">
+    <img src="bg/animal-7901464_640.jpg" alt="">
+    <div class="txt">
+      <h2>Segment Title</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur </p>
+      <a href="#"><img src="icon/facebook_b.png" alt=""></a>
+      <a href="#"><img src="icon/pinterest_b.png" alt=""></a>
+  </div>
+  </div>
+   <div class="box2 box">
+    <img src="bg/bengal-cat-8012976_1920.jpg" alt="">
+   </div>
+   <div class="box3 box">
+    <img src="bg/bird-8615360_640.jpg" alt="">
+   </div>
+   <div class="box4 box">
+    <img src="bg/fox-715588_640.jpg" alt="">
+   </div>
+  </div>
+</body>
+</html>

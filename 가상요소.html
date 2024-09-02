@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상요소</title>
+  <style>
+    /*
+    ::before = 선택한 요소의 첫번쨰 자식요소로 가상요소를 생성
+    ::after = 선택한 요소의 마지막 자식요소로 가상요소를 생성
+    ::selection = 선택한 텍스트
+
+    */
+
+    li{
+      margin-bottom: 10px;
+    }
+
+    a{
+      text-decoration: none;
+      border-bottom: 3px dotted navy;
+    }
+/*a요소의 마지막 자속으로 가상요소 선택*/
+    a::after{
+      content:"("attr(id)")";
+    }
+
+    #naver::before{
+      content:url(icon/facebook_b.png);
+    }
+
+    /*content를 쓸때 대표적으로 사용되는 속성들
+    nomal : 아무것도 표시하지 않는 기본값
+    string: 문자열 생성
+    none: 아무것도 표시하지 않음
+    url: 이미지나 비디오를 불러올수 있음
+    attr: 해당 속성의 속성값을 표시
+    */
+
+    /*
+    content:""; 가짜 속성
+    ::before, ::after를 쓸땐 content속성이 꼭 필요
+    */
+</style>
+</head>
+<body>
+  <ul>
+    <li>
+      <a id="naver" href="https://www.naver.com">naver</a>
+    </li>
+    <li>
+      <a id="daum" href="https://www.daum.net">naver</a>
+    </li>
+  </ul>
+</body>
+</html>

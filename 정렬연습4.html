@@ -1,65 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>정렬연습4</title>
-    <style>
-      *{
-        margin:0;
-        padding:0;
-      }
-      section{
-        width:800px;
-        height:800px;
-        border:1px solid red;
-        margin:0 auto;
-        margin-top:50px;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정렬연습4</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+    .container{
+      width:1080px;
+      margin:0 auto;
+      overflow:auto;/*클리어픽스핵*/
+      margin-top:300px;
+    }
+    .box{
+      width:540px;
+      float:left;
+      margin-bottom:40px;
+    }
 
-      .box1{
-        width:700px;
-        height:100px;
-        border:1px solid blue;
-        margin:0 auto;
-        margin-top:100px;
-      }
-    </style>
-  </head>
-  <body>
-    <section>
-      <div class="box1">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        laborum distinctio, fugiat provident et beatae rem voluptatum sint culpa
-        voluptas facere fugit? Est tempore sit consequatur voluptates sapiente
-        tempora aperiam?
+    .box>img{
+      display: block;
+      float:left;
+      margin:0 10px;
+    }
+
+    .box>.txt{
+      width:340px;
+      float: left;
+      margin:0 10px;
+      color:#666;
+    }
+    .txt>h2{
+      font-size:24px;
+      line-height:1.6em;
+    }
+
+    .txt>p{
+      font-size: 14px;
+      line-height: 1.5em;
+      margin-bottom: 50px;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <img src="https://picsum.photos/160" alt="">
+      <div class="txt">
+        <h2>Segment title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        <div class="icon">
+          <a href="#"><img src="icon/facebook_b.png" alt=""></a>
+          <a href="#"><img src="icon/pinterest_b.png" alt=""></a>
+        </div>
       </div>
-      <div class="box2">
-        <article>
-          <div class="sub1 sub"></div>
-          <div class="sub2 sub"></div>
-        </article>
-        <article>
-          <div class="sub3 sub"></div>
-          <div class="sub4 sub"></div>
-        </article>
-        <article>
-          <div class="sub5 sub"></div>
-          <div class="sub6 sub"></div>
-        </article>
-        <article>
-          <div class="sub7 sub"></div>
-          <div class="sub8 sub"></div>
-        </article>
-        <article>
-          <div class="sub9 sub"></div>
-          <div class="sub10 sub"></div>
-        </article>
-        <article>
-          <div class="sub11 sub"></div>
-          <div class="sub12 sub"></div>
-        </article>
+    </div>
+    <div class="box">
+      <img src="https://picsum.photos/160" alt="">
+      <div class="txt">
+        <h2>Segment title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia,!</p>
+        <div class="icon">
+          <a href=""><img src="icon/facebook_b.png" alt=""></a>
+          <a href=""><img src="icon/pinterest_b.png" alt=""></a>
+          </div>
       </div>
-    </section>
-  </body>
+    </div>
+    <div class="box">
+      <img src="https://picsum.photos/160" alt="">
+      <div class="txt">
+        <h2>Segment title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque alias</p>
+        <div class="icon">
+          <a href=""><img src="icon/facebook_b.png" alt=""></a>
+          <a href=""><img src="icon/pinterest_b.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://picsum.photos/160" alt="">
+      <div class="txt">
+        <h2>Segment title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque alias</p>
+        <div class="icon">
+          <a href=""><img src="icon/facebook_b.png" alt=""></a>
+          <a href=""><img src="icon/pinterest_b.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
