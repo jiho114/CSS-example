@@ -1,0 +1,101 @@
+*{
+  margin:0; padding:0;
+}
+
+a{
+  text-decoration:none;
+  color: inherit;
+}
+
+#notice{
+  max-width:1200px;
+  min-width:680px;
+  width:100%;
+  margin:0 auto;
+  padding:40px 20px;
+  box-sizing: border-box;
+}
+
+#notice>h1{
+  font-size:36px;
+  margin-bottom: 40px;
+}
+
+table{
+  width:100%;
+  /*table요소의 안쪽 여백을 제거하는 방법*/
+  border-collapse:collapse;
+}
+
+th{
+  border-top:2px solid #111;
+  border-bottom:1px solid #111;
+  font-size:16px;
+  height:60px;
+}
+
+td{
+  border-bottom:1px dotted #999;
+  font-size:14px;
+  position: relative;
+}
+
+td:first-child{
+  padding:20px 0 20px 44px;
+
+}
+
+td:last-child{
+  text-align: center;
+}
+
+td:first-child::after{
+  content:"";
+  position: absolute; /*포지션앱솔루트 주면 디스플레이 블럭으로 자동*/
+  width:4px;
+  height:4px;
+  background-color:#111;
+  border-radius:50%;
+  left:20px;
+  top:50%;
+  /*ㅠㅗ지션 앱솔루트 적용했을 때 세로 가운데 정렬*/
+  margin-top:-2px;
+} 
+
+.pagenation{
+  min-width:760px;
+  max-width:1200px;
+  width:100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagenation-wrap{
+  display: inline-block;
+}
+
+.pagenation-wrap>a{
+  float:left;
+  padding:8px 16px;
+}
+
+.pagenation-wrap>a.active{
+  background-color: salmon;
+  border-radius:10px;
+  color: white;
+  border:1px dotted hotpink;
+}
+.pagenation-wrap>a:not(.active):hover{
+  background-color: bisque;
+  border-radius:10px;
+}
+
+.pagenation-wrap>a:first-child:hover{
+  background-color: lightpink;
+  border-radius:10px;
+}
+.pagenation-wrap>a:last-child:hover{
+  background-color:lightpink;
+  border-radius:10px;
+}
+

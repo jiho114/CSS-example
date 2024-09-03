@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인폼만들기3</title>
+  <style>
+    *{margin:0; padding:0; box-sizing: border-box;}
+    a{text-decoration:none; color:gray;}
+
+    section{
+      width:100%;
+      height:100vh;
+      background-color:#eeeeee;
+    }
+    .container{
+      width:500px;
+      height:500px;
+      background-color:lightgray;
+      border:1px solid darkgray;
+      border-radius: 10px;
+      position: fixed;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      text-align: center;
+      position:relative;
+      transition: 2s;
+    }
+
+    h1{
+      font-size: 34px;
+      line-height:5;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+   
+    .id{
+      display: block;
+      margin: 0 auto;
+      width:400px;
+      height:50px;
+      font-size:20px;
+      padding-left: 20px;
+      margin-bottom: 20px;
+      border:1px solid grey;
+      border-radius:5px;
+    }
+
+    .password{
+      display: block;
+      margin: 0 auto;
+      width:400px;
+      height:50px;
+      font-size:20px;
+      padding-left: 20px;
+      border:1px solid grey;
+      border-radius:5px;
+    }
+
+    .check{
+      position: absolute;
+      left:10%;
+      margin-top: 10px;
+    }
+    p{
+      display: block;
+      position: absolute;
+      left:15%;
+      bottom:182px;
+      color:#111;
+    }
+
+    .login{
+      width:60px;
+      height:50px;
+      border:none;
+      background-color:seagreen;
+      color: white;
+      font-size:15px;
+      font-weight:bold;
+      position: absolute;
+      right:10%;
+      margin-top:10px;
+      border-radius:5px;
+    }
+
+    .box{
+      width:100%;
+      border-top:1px solid grey;
+      position: absolute;
+      top:90%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      
+    }
+
+
+    a{
+      
+      display: inline-block;
+      padding-top: 25px;
+      color: rgb(59, 59, 59);
+    }
+
+    a:not(:first-child)::before{
+      content:"｜";
+    }
+
+    a:hover{
+      color:rgb(172, 172, 172);
+    }
+
+    .container:hover{
+      background-color:white;
+      transition:2s;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="container">
+      <h1>LOGIN</h1>
+      <form>
+        <input type="email" class="id" placeholder="아이디">
+        <input type="password" class="password" placeholder="비밀번호">
+        <input type="checkbox" class="check">
+        <p>로그인유지</p>
+        <input type="submit" class="login" value="로그인">
+      </form>
+      <div class="box">
+        <a href="#">아이디/비밀번호 찾기</a>
+        <a href="#">회원가입</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

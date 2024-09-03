@@ -78,6 +78,38 @@
    .menu-box>ul>li:hover>.sub3{
     display: block;
    }
+
+  .sub-1{
+    display:none;
+    position: absolute;
+    top:0;
+    left:100%;
+    background-color: sandybrown;
+  }
+
+  .sub-1 a {
+    white-space:nowrap;
+    display: block;
+    padding:10px;
+    
+  }
+  .sub1>li:hover>.sub-1{
+    display: block;
+  }
+
+ul.sub1>li>a:not(:only-child)::after{
+      content:"[+]";
+    }
+
+ul.sub1>li:hover>a:not(:only-child)::after{
+      content:"[-]";
+    }
+
+    .sub1>li{
+      position:relative;
+    }
+
+    
   </style>
 </head>
 <body>
@@ -90,7 +122,12 @@
       <ul>
         <li><a href="#">1차 메뉴 아이템</a>
         <ul class="sub1">
-          <li><a href="#">기타</a></li>
+          <li><a href="#">기타</a>
+          <ul class="sub-1">
+            <li><a href="#">2차 기타</a></li>
+            <li><a href="#">2차 기타</a></li>
+          </ul>
+          </li>
           <li><a href="#">기타</a></li>
           <li><a href="#">기타</a></li>
           <li><a href="#">기타</a></li>
